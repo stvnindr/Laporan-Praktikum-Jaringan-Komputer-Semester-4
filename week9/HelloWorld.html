@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>my world gweh</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', sans-serif;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(to bottom, #aba8a8, #b395b3);
+            overflow: hidden;
+        }
+
+        h1 {
+            color: #87CEFA;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 25px 50px;
+            border-radius: 15px;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+        }
+
+        .sunflower {
+            position: absolute;
+            font-size: 40px;
+            animation: float 6s infinite ease-in-out;
+        }
+
+        .sun1 { top: 10%; left: 10%; }
+        .sun2 { top: 20%; right: 15%; animation-delay: 2s; }
+        .sun3 { bottom: 15%; left: 20%; animation-delay: 1s; }
+        .sun4 { bottom: 10%; right: 10%; animation-delay: 3s; }
+        .sun5 { top: 50%; left: 5%; animation-delay: 4s; }
+
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0px); }
+        }
+    </style>
+
+    <script>
+        // Cek apakah dibuka dari server
+        if (location.protocol === "file:") {
+            document.write("<h2 style='text-align:center;'>⚠️ Jalankan melalui server dulu!</h2>");
+            throw new Error("Harus lewat server");
+        }
+    </script>
+</head>
+<body>
+
+
+    <h1>Apalah test doang ini</h1>
+
+</body>
+</html>
