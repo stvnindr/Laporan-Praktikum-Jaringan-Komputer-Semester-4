@@ -27,7 +27,7 @@ Berdasarkan penangkapan paket menggunakan perintah `tracert gaia.cs.umass.edu`, 
 | **Header Length** | `20 bytes` | Ukuran standar header IP tanpa options. |
 | **Total Length** | `92 bytes` | Total ukuran header + payload. |
 
-![IPv4](../WEEK10/1.png)
+![IPv4](../1.png)
 
 ### 2. Analisis Time to Live (TTL)
 Pada setiap *hop* (lompatan) router dalam perintah `traceroute`, nilai TTL pada paket yang kembali akan memberikan informasi mengenai jarak logis router tersebut. Setiap kali paket melewati router, nilai TTL dikurangi 1. Jika TTL mencapai 0, router akan membuang paket dan mengirimkan pesan *ICMP Time Exceeded* kembali ke pengirim.
